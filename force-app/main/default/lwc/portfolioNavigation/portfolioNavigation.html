@@ -1,0 +1,29 @@
+<template>
+	<lightning-layout class="header" horizontal-align="center">
+		<lightning-layout-item class="slds-col_bump-right slds-var-p-around_small">
+			<div class="slds-media slds-media_center">
+				<div class="slds-media__figure">
+					<lightning-avatar variant="square" size="large" src={seanProfile}></lightning-avatar>
+				</div>
+				<div class="slds-media__body">
+					<a data-target-section="home" onclick={handleLinkClick} class="header-link">SEAN DESMARTEAU</a>
+				</div>
+			</div>
+		</lightning-layout-item>
+		<lightning-layout-item class="layout-item slds-var-p-around_small">
+			<a data-target-section="home" onclick={handleLinkClick} class="header-link">HOME</a>
+		</lightning-layout-item>
+        <lightning-layout-item class="layout-item slds-var-p-around_small">
+			<a data-target-section="about" onclick={handleLinkClick} class="header-link">ABOUT</a>
+		</lightning-layout-item>
+        <lightning-layout-item class="layout-item slds-var-p-around_small">
+			<a data-target-section="experience" onclick={handleLinkClick} class="header-link">EXPERIENCE</a>
+		</lightning-layout-item>
+        <lightning-layout-item class="layout-item slds-var-p-around_small">
+			<a data-target-section="education" onclick={handleLinkClick} class="header-link">EDUCATION</a>
+		</lightning-layout-item>
+        <lightning-layout-item class="layout-item slds-var-p-around_small">
+			<a data-target-section="projects" onclick={handleLinkClick} class="header-link">PROJECTS</a>
+		</lightning-layout-item>
+	</lightning-layout>
+</template>
