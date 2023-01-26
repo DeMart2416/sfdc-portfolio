@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "SourceSansPro";
+    src: url('/s/sfsites/c/resource/Source_Sans_Pro_Font/SourceSansPro-Regular.ttf') format('TrueType');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SourceSansPro";
+    src: url('/s/sfsites/c/resource/Source_Sans_Pro_Font/SourceSansPro-Bold.ttf') format('TrueType');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SourceSansPro";
+    src: url('/s/sfsites/c/resource/Source_Sans_Pro_Font/SourceSansPro-Black.ttf') format('TrueType');
+    font-weight: 800;
+    font-style: normal;
+}
