@@ -4,14 +4,23 @@
 			<h1 class="heading-primary">Hey, My name is Sean</h1>
 			<div class="home-hero__info">
 				<p class="text-primary">
-					3x Salesforce Certified Developer with 5+ years of Salesforce experience and a passion for helping businesses
-					maximize their value with the Salesforce Platform.
+					3x Salesforce Certified Developer with 5+ years of Salesforce experience and a passion for helping businesses maximize
+					their value with the Salesforce Platform.
 				</p>
 			</div>
 			<div class="home-hero__cta">
 				<a href="./#projects" class="btn btn--bg">Projects</a>
 			</div>
 		</div>
+		<lightning-layout multiple-rows="true" class="hero-social-links">
+			<template for:each={socials} for:item="social">
+				<a href={social.url} target="_blank" key={social.id} class="hero-social-link">
+					<lightning-layout-item >
+						<img src={social.src} alt={social.name} class="hero-social-icon" />
+					</lightning-layout-item>
+				</a>
+			</template>
+		</lightning-layout>
 		<div class="home-hero__mouse-scroll-cont">
 			<div class="mouse"></div>
 		</div>
