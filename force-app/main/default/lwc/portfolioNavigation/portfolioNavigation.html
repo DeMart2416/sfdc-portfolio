@@ -11,7 +11,17 @@
 				<lightning-layout-item key={section.Name}>
 					<a data-target-section={section.Name} onclick={handleLinkClick} class="header-link">{section.Name}</a>
 				</lightning-layout-item>
-            </template>
+			</template>
+		</div>
+		<div class="header__main-ham-menu-cont">
+			<img src={imgSrc} alt={imgAlt} onclick={handleMenuOpen} class="header__main-ham-menu" />
+		</div>
+		<div class={displayDropDownMenu}>
+			<template for:each={sections} for:item="section">
+				<lightning-layout-item key={section.Name} class="header__sm-menu-link">
+					<a data-target-section={section.Name} onclick={handleLinkClick}>{section.Name}</a>
+				</lightning-layout-item>
+			</template>
 		</div>
 	</lightning-layout>
 </template>
