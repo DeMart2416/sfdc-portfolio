@@ -17,6 +17,7 @@
 
 .footer-upper-info {
     width: 40%;
+    order: 1;
 }
 
 .footer-social-link {
@@ -56,6 +57,15 @@ p {
     width: 92%;
 }
 
+.footer-upper-container {
+    display: flex;
+}
+
+.footer-upper-links {
+    order: 2;
+}
+
+
 @media only screen and (max-width: 56.25em) {
     .footer-lower {
         padding: calc(3.5rem * var(--font-weight-percentage)) 0;
@@ -71,7 +81,7 @@ p {
         display: inline-block;
     }
 
-    h2 {
+    h4 {
         margin-top: calc(5rem * var(--font-weight-percentage));
     }
 }
