@@ -1,11 +1,77 @@
+@import 'c/cssLibrary';
+
 .footer-container {
-    background-color: blue;
+    background: #000000;
 }
 
 .footer-upper {
     width: 100%;
+    font-family: "SourceSansPro";
+    font-weight: normal;
+    color: #eee;
+    padding: calc(8rem * var(--font-weight-percentage)) 0;
+    max-width: calc(120rem * var(--font-weight-percentage));
+    margin: auto;
+    width: 92%;
+}
+
+.footer-upper-info {
+    width: 40%;
+}
+
+.footer-social-link {
+    margin-top: calc(2.0rem * var(--font-weight-percentage));
+    margin-right: calc(1.2rem * var(--font-weight-percentage));
+    width: calc(2.5rem * var(--font-weight-percentage));
+}
+
+.no-margin-right {
+    margin-right: 0;
+}
+
+h4,
+h2 {
+    font-family: "SourceSansPro";
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: calc(2.2rem * var(--font-weight-percentage));
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: calc(1.5rem * var(--font-weight-percentage));
+    margin-top: calc(2.0rem * var(--font-weight-percentage));
+    line-height: 1.7;
 }
 
 .footer-lower {
     width: 100%;
+    font-family: "SourceSansPro";
+    font-weight: normal;
+    color: #eee;
+    padding: calc(4rem * var(--font-weight-percentage)) 0;
+    border-top: 1px solid #444;
+    max-width: calc(120rem * var(--font-weight-percentage));
+    font-size: calc(1.2rem * var(--font-weight-percentage));
+    width: 92%;
+}
+
+@media only screen and (max-width: 56.25em) {
+    .footer-lower {
+        padding: calc(3.5rem * var(--font-weight-percentage)) 0;
+    }
+
+    .footer-upper {
+        padding: calc(6rem * var(--font-weight-percentage)) 0;
+    }
+}
+
+@media only screen and (max-width: 37.5em) {
+    .footer-upper-container {
+        display: inline-block;
+    }
+
+    h2 {
+        margin-top: calc(5rem * var(--font-weight-percentage));
+    }
 }

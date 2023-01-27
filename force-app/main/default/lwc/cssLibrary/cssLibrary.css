@@ -18,3 +18,25 @@
     font-weight: 800;
     font-style: normal;
 }
+
+:host {
+    --font-weight-percentage: 0.625;
+}
+
+@media only screen and (max-width: 75em) {
+    :host {
+        --font-weight-percentage: 0.59;
+    }
+}
+
+@media only screen and (max-width: 56.25em) {
+    :host {
+        --font-weight-percentage: 0.56;
+    }
+}
+
+@media only screen and (min-width: 112.5em) {
+    :host {
+        --font-weight-percentage: 0.65;
+    }
+}
