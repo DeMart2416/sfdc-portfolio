@@ -5,12 +5,26 @@
 	<div data-id="home">
 		<c-portfolio-hero></c-portfolio-hero>
 	</div>
-	<!--
-	<div data-id="about">ABOUT</div>
-	<div data-id="experience">EXPERIENCE</div>
-	<div data-id="education">EDUCATION</div>
-	<div data-id="projects">PROJECTS</div>
-	-->
+	<template if:true={about}>
+		<div data-id="about">
+			<c-portfolio-about section={about}></c-portfolio-about>
+		</div>
+	</template>
+	<template if:true={experience}>
+		<div data-id="experience">
+			<c-portfolio-experience section={experience}></c-portfolio-experience>
+		</div>
+	</template>
+	<template if:true={project}>
+		<div data-id="projects">
+			<c-portfolio-experience section={experience}></c-portfolio-experience>
+		</div>
+	</template>
+	<template if:true={contact}>
+		<div data-id="contact">
+			<c-portfolio-contact section={contact}></c-portfolio-contact>
+		</div>
+	</template>
 	<div>
 		<c-portfolio-footer></c-portfolio-footer>
 	</div>

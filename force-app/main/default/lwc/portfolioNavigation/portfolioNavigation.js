@@ -17,7 +17,7 @@ export default class PortfolioNavigation extends LightningElement {
 		{ Id: 2, Name: 'about' },
 		{ Id: 3, Name: 'experience' },
 		//{ Id: 4, Name: 'education' },
-		{ Id: 5, Name: 'projects' }
+		{ Id: 5, Name: 'contact' }
 	];
 
 	get displayDropDownMenu() {
